@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Watermark Pro | Free Bulk Photo Watermarking Tool</title>
+    <meta name="description" content="Protect your photography with Watermark Pro. Free, secure, client-side batch watermarking. Add logos and text without uploading photos to a server.">
+    <meta name="keywords" content="watermark photos online, batch watermark, secure photo protection, add logo to image, javascript watermark, free watermarker">
+    <meta name="author" content="Dippan Bhusal">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Watermark Pro - Secure Photo Protection">
+    <meta property="og:description" content="Add watermarks to hundreds of photos instantly in your browser. No uploads, 100% private.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://watermark.dippanbhusal.tech/">
+    <meta property="og:image" content="https://watermark.dippanbhusal.tech/ogg-watermarkpro.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@dippanbhusal">
+    <meta name="twitter:image" content="https://watermark.dippanbhusal.tech/ogg-watermarkpro.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Watermark Pro",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Web Browser",
+      "author": {
+        "@type": "Person",
+        "name": "Dippan Bhusal",
+        "url": "https://github.com/Kdippan"
+      },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+
+    <style>
+        /* Navbar Fixes */
+        .landing-nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 70px;
+            background: var(--bg-panel);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+
+        .nav-brand img { height: 32px; width: auto; }
+
+        /* Hero Section Spacing Fix */
+        .hero-section {
+            padding: 120px 20px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            min-height: auto; /* Removed 90vh to fix mobile gap */
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .landing-nav { padding: 0 15px; }
+            .nav-links.mobile-hidden { display: none; }
+            
+            .hero-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom: 40px;
+                gap: 30px;
+            }
+
+            .hero-content h1 { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1rem; }
+            
+            .hero-cta {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+
+            .btn-lg { width: 100%; justify-content: center; }
+            .mockup-window { height: 250px; }
+            .features-section { padding: 40px 20px; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .social-icons { justify-content: center; }
+        }
+    </style>
+</head>
+<body class="landing-page">
+
+    <nav class="navbar landing-nav">
+        <div class="nav-brand">
+            <img src="https://watermark.dippanbhusal.tech/logo-watermarkpro.png" alt="Watermark Pro">
+            <span>Watermark Pro</span>
+        </div>
+        <div class="nav-links mobile-hidden">
+            <a href="index.html" class="active">Home</a>
+            <a href="editor.html">Open Editor</a>
+            <a href="history.html">History</a>
+            <a href="#features">Features</a>
+        </div>
+        <div class="nav-actions">
+            <a href="editor.html" class="btn btn-primary">Start Now</a>
+            <button id="themeToggle" class="icon-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content fade-in-up">
+            <span class="badge">v2.0 Now Available</span>
+            <h1>Protect Your Work.<br> <span class="text-gradient">Instantly. Securely.</span></h1>
+            <p class="hero-subtitle">
+                The professional bulk watermarking tool that runs entirely in your browser. 
+                Your photos never leave your device.
+            </p>
+            <div class="hero-cta">
+                <a href="editor.html" class="btn btn-lg btn-primary shadow-hover">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Launch Editor
+                </a>
+                <a href="https://github.com/Kdippan/watermark-pro" target="_blank" class="btn btn-lg btn-secondary">
+                    <i class="fa-brands fa-github"></i> Star on GitHub
+                </a>
+            </div>
+            <div class="trust-badges">
+                <span><i class="fa-solid fa-check-circle"></i> No Server Uploads</span>
+                <span><i class="fa-solid fa-check-circle"></i> Bulk Processing</span>
+                <span><i class="fa-solid fa-check-circle"></i> Free Forever</span>
+            </div>
+        </div>
+        
+        <div class="hero-visual fade-in-up delay-200">
+            <div class="mockup-window">
+                <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="mockup-body">
+                    <i class="fa-solid fa-images big-icon"></i>
+                    <div class="floating-badge badge-1"><i class="fa-solid fa-copyright"></i> Protected</div>
+                    <div class="floating-badge badge-2"><i class="fa-solid fa-bolt"></i> Fast</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Photographers Choose Us</h2>
+                <p>Designed for speed, privacy, and professional results.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos>
+                    <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>100% Private</h3>
+                    <p>We use advanced HTML5 Canvas technology. Your photos are processed locally on your device and are never uploaded to any server.</p>
+                </div>
+                
+                <div class="feature-card" data-aos>
+                    <div class="icon-box"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Batch Processing</h3>
+                    <p>Drag and drop hundreds of photos at once. Apply your logo or text watermark to all of them in seconds with a single click.</p>
+                </div>
+                
+                <div class="feature-card" data-aos>
+                    <div class="icon-box"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Full Customization</h3>
+                    <p>Adjust opacity, rotation, tiling, fonts, and colors. Save your favorite settings as Presets for next time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-grid container">
+            <div class="footer-brand">
+                <h3>Watermark Pro</h3>
+                <p>Built with ❤️ by <strong>Dippan Bhusal</strong>.</p>
+                <p>Open Source and free for everyone.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Product</h4>
+                <a href="editor.html">Editor</a>
+                <a href="history.html">History Log</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect with Dippan</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/Kdippan" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/Kdippan" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.npmjs.com/~kdippan" target="_blank" aria-label="NPM"><i class="fa-brands fa-npm"></i></a>
+                    <a href="https://instagram.com/dippan.bhusal" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/dippanbhusal" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://facebook.com/dippan.bhusall" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dippan Bhusal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+
+        // Simple Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+
+        document.querySelectorAll('.feature-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
